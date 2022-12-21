@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --white-color: rgb(255, 255, 255);
+    --white-opacity-color: rgba(255, 255, 255, 0.8);
+    --orange-color: rgb(237, 107, 91);
+    --light-orange-color: rgb(249, 172, 102);
+    --dark-opacity-color: rgba(0, 0, 0, 0.95);
+    --light-color: rgb(245, 245, 245);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}

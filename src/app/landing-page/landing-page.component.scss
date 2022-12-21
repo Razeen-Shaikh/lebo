@@ -1,0 +1,118 @@
+.container {
+    max-height: 100vh;
+    height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+    background: var(--dark-opacity-color);
+    overflow: hidden;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+
+        .title {
+            font-weight: 800;
+            font-size: 50px;
+
+            .text {
+                &-orange {
+                    color: var(--orange-color)
+                }
+
+                &-white {
+                    color: var(--white-opacity-color);
+                }
+            }
+        }
+
+        .nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-list {
+                list-style: none;
+                margin: 0 1rem;
+                cursor: pointer;
+            }
+
+            &-link {
+                color: var(--white-color);
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 27px;
+            }
+
+            &-btn {
+                color: var(--orange-color);
+                border-color: var(--orange-color);
+                background: transparent;
+                font-weight: 400;
+                font-size: 35px;
+                padding: 11px 10px;
+                border: 2.5px solid var(--orange-color);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .section {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+        position: relative;
+
+        .content {
+            width: 54%;
+            padding-left: 2rem;
+
+            &-title {
+                font-family: 'Open Sans', sans-serif;
+                color: var(--orange-color);
+                font-weight: 800;
+                font-size: 65px;
+
+                .text {
+                    &-light {
+                        color: var(--light-color);
+                    }
+                }
+            }
+
+            &-description {
+                font-weight: 400;
+                font-size: 35px;
+                color: var(--light-orange-color);
+            }
+        }
+
+        .preview-img {
+            width: 15vw;
+            position: absolute;
+            top: 0;
+            right: -4%;
+            transform: rotate(-67.35deg);
+        }
+
+        .image {
+            width: 45%;
+            height: 550px;
+        }
+    }
+
+    .moon-img {
+        width: 230.9px;
+        height: 290.73px;
+        background-repeat: no-repeat;
+    }
+
+    .satellite-img {
+        width: 351px;
+        height: 157px;
+    }
+}
