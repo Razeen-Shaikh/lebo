@@ -1,0 +1,16 @@
+<header class="header">
+    <h1 class="title"><span ngClass="{{isLanding ? 'text-orange' : 'text-gradient'}}">Le</span><span
+            class="text-white">Bo</span></h1>
+    <nav class="nav">
+        <ul>
+            <li class="nav-list" *ngIf="isLanding"><a class="nav-link" href="">About</a></li>
+            <li class="nav-list" *ngIf="isLanding"><a class="nav-link" href="">Product</a></li>
+            <li class="nav-list" *ngIf="isLanding"><a class="nav-link" href="">Contact</a></li>
+            <li class="nav-list" *ngIf="isLanding"><button class="nav-btn" (click)="gotoStatistics()">Launch
+                    Dapp</button></li>
+            <li *ngIf="!isLanding">
+                <img src="assets/Markets.svg" /> <a class="nav-link" href="#">Markets</a>
+            </li>
+        </ul>
+    </nav>
+</header>
