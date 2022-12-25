@@ -1,10 +1,66 @@
+@import "/src/variables.scss";
+
 .container {
   max-height: 100vh;
   height: 100vh;
   max-width: 100vw;
   width: 100vw;
-  background: var(--dark-opacity-color);
+  background: $dark-opacity-color;
   overflow: hidden;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    .title {
+      font-weight: 800;
+      font-size: 50px;
+
+      .text {
+        &-orange {
+          color: $orange-color;
+        }
+
+        &-white {
+          color: $white-opacity-color;
+        }
+      }
+    }
+
+    .nav {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-list {
+        list-style: none;
+        margin: 0 1rem;
+        cursor: pointer;
+      }
+
+      &-link {
+        color: $white-color;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 27px;
+      }
+
+      &-btn {
+        cursor: pointer;
+        color: $orange-color;
+        border-color: $orange-color;
+        background: transparent;
+        font-weight: 400;
+        font-size: 35px;
+        padding: 11px 10px;
+        border: 2.5px solid $orange-color;
+        border-radius: 10px;
+      }
+    }
+  }
 
   .section {
     display: flex;
@@ -20,13 +76,13 @@
 
       &-title {
         font-family: "Open Sans", sans-serif;
-        color: var(--orange-color);
+        color: $orange-color;
         font-weight: 800;
         font-size: 65px;
 
         .text {
           &-light {
-            color: var(--light-color);
+            color: $light-color;
           }
         }
       }
@@ -34,7 +90,7 @@
       &-description {
         font-weight: 400;
         font-size: 35px;
-        color: var(--light-orange-color);
+        color: $light-orange-color;
       }
     }
 
@@ -60,6 +116,18 @@
 
   .satellite-img {
     width: 351px;
-    height: 157px;
+    height: 216px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  .planet-img {
+    position: absolute;
+    width: 120px;
+    background-repeat: no-repeat;
+    height: 176px;
+    right: 0;
+    bottom: 85px;
   }
 }

@@ -1,4 +1,26 @@
 <div class="container">
+    <header class="header">
+        <h1 class="title">
+            <span class="text-orange">Le</span>
+            <span class="text-white">Bo</span>
+        </h1>
+        <nav class="nav">
+            <ul>
+                <li class="nav-list">
+                    <a class="nav-link" href="">About</a>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-link" href="">Product</a>
+                </li>
+                <li class="nav-list">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-list">
+                    <button class="nav-btn" (click)="gotoStatistics()">Launch Dapp</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section class="section">
         <div class="content">
             <h2 class="content-title">
@@ -12,8 +34,9 @@
         </div>
         <img class="preview-img" src="assets/preview-removebg-preview 1.svg" alt="">
     </section>
-    <div class="moon-img" [style.background-image]="'url(/assets/Screenshot__515_-removebg-preview-1.svg)'"></div>
+    <div class="moon-img" [style.background-image]="'url(assets/Screenshot__515_-removebg-preview-1.svg)'"></div>
     <div class="satellite-img"
-        [style.background-image]="'url(/assets/satellite-on-transparent-background-free-vector-removebg-preview-1.svg)'">
+        [style.background-image]="'url(assets/satellite-on-transparent-background-free-vector-removebg-preview-1.svg)'">
     </div>
+    <div class="planet-img" [style.background-image]="'url(assets/planet.svg)'"></div>
 </div>

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import "variables";
 
 :root {
   --white-color: rgb(255, 255, 255);
@@ -9,10 +10,15 @@
   --light-orange-color: rgb(249, 172, 102);
   --dark-opacity-color: rgba(0, 0, 0, 0.95);
   --light-color: rgb(245, 245, 245);
-  --text-gradient: linear-gradient(
+  --text-gradient-blue: linear-gradient(
     101.73deg,
     #43cea2 0%,
     rgba(84, 147, 210, 0.88) 96.33%
+  );
+  --text-gradient-red: linear-gradient(
+    82.35deg,
+    #eecda3 2.49%,
+    rgba(245, 134, 182, 0.88) 101.81%
   );
 }
 
